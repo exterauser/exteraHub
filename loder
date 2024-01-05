@@ -87,7 +87,7 @@ LP:addDropdown("Teleport to Player",PLIST,4,function(value)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
 end)
 
-local Credits = UI:addPage("Local",3,false,6)
+local Credits = UI:addPage("Credits",3,false,6)
 
 Credits:addLabel("Who created this hub?","I know!")
 
