@@ -1,4 +1,54 @@
-
+if game.PlaceId == 13772394625 then
+    place = 'Blade Ball'
+end
+if game.PlaceId == 3956818381 then
+    place = 'Ninja Legends'
+end
+if game.PlaceId == 14433762945 then
+    place = 'Anime Champions Simulator'
+end 
+if game.PlaceId == 5712833750 then
+    place = 'Animal Simulator'
+end
+if game.PlaceId == 4924922222 then
+    place = 'Arm Wrestle Simulator'
+end
+if game.PlaceId == 3956818381 then
+    place = 'Brookhaven'
+end
+if game.PlaceId == 8737899170 then
+    place = 'Pet Simulator 99'
+end
+if game.PlaceId == 2753915549 then
+    place = 'Blox Fruits'
+end
+if game.PlaceId == 286090429 then
+    place = 'Arsenal'
+end
+if game.PlaceId == 4353458311 then
+    place = 'Copyrighted Artists'
+end
+if game.PlaceId == 14561998168 then
+    place = 'Heaven Stand'
+end
+if game.PlaceId == 142823291 then
+    place = 'Murder Mystery 2'
+end
+if game.PlaceId == 537413528 then
+    place = 'Build A Boat For Tresure'
+end
+if game.PlaceId == 13775256536 then
+    place = 'Toilet Tower Defense'
+end
+if game.PlaceId == 662417684 then
+    place = 'Lucky Blocks Battlegrounds'
+end
+if game.PlaceId == 920587237 then
+    place = 'Adopt Me'
+end
+if game.PlaceId == 2768379856 then
+    place = '3008'
+end
 
 local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/aaaa"))()
 
@@ -6,7 +56,7 @@ local UI = GUI:CreateWindow("Extera Hub | 1.0","@exterauser")
 
 local Home = UI:addPage("Game",1,true,6)
 
-Home:addLabel("Scripts")
+Home:addLabel("Scripts" place)
 
 Home:addButton("CheatX",function()
     loadstring(game:HttpGet("https://pastecode.dev/raw/k2Yp5Qe5/paste1.txt", true))()
@@ -87,7 +137,7 @@ LP:addDropdown("Teleport to Player",PLIST,4,function(value)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
 end)
 
-local Credits = UI:addPage("Credits",3,false,6)
+local Credits = UI:addPage("Local",3,false,6)
 
 Credits:addLabel("Who created this hub?","I know!")
 
