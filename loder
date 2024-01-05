@@ -8,42 +8,12 @@ local Home = UI:addPage("Game",1,true,6)
 
 Home:addLabel("Scripts")
 
-Home:addButton("This is a button",function()
+Home:addButton("CheatX",function()
     loadstring(game:HttpGet("https://pastecode.dev/raw/k2Yp5Qe5/paste1.txt", true))()
 end)
 
-Home:addToggle("This is a Toggle",function(value)
-    print(value)
-    if value == false then 
-        game.StarterGui:SetCore("SendNotification",{
-            Title = "Toggle";
-            Text = "false";
-        })
-    else 
-        game.StarterGui:SetCore("SendNotification",{
-            Title = "Toggle";
-            Text = "true";
-        })
-    end
-end)
 
-Home:addSlider("This is a Slider",16,100,function(value)
-    print(value)
-end)
 
-Home:addTextBox("This is a TextBox","Um",function(value)
-    game.StarterGui:SetCore("SendNotification",{
-        Title = "Wrote";
-        Text = value;
-    })
-end)
-
-Home:addDropdown("This is a Dropdown",{"Um","Yep","Lop","GG"},1,function(value)
-    game.StarterGui:SetCore("SendNotification",{
-        Title = "Selected :";
-        Text = value;
-    }) 
-end)
 
 -- Just an example of how you would actually use it i guess
 
@@ -115,4 +85,12 @@ end)
 
 LP:addDropdown("Teleport to Player",PLIST,4,function(value)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
+end)
+
+local Credits = UI:addPage("Local",3,false,6)
+
+Credits:addLabel("Who created this hub?","I know!")
+
+Credits:addButton("@exterauser",function()
+    setclipboard('exterauser')
 end)
