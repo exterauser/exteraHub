@@ -56,7 +56,7 @@ local UI = GUI:CreateWindow("Extera Hub | 1.0","@exterauser")
 
 local Home = UI:addPage("Game",1,true,6)
 
-Home:addLabel("Scripts" place)
+Home:addLabel("Scripts For", place)
 
 Home:addButton("CheatX",function()
     loadstring(game:HttpGet("https://pastecode.dev/raw/k2Yp5Qe5/paste1.txt", true))()
@@ -114,28 +114,6 @@ LP:addDropdown("Teleport to Player",PLIST,4,function(value)
 end)
 
 
--- Spam 
-
-LP:addLabel("Spam","This is just to show how it looks with more ui elements")
-
-LP:addDropdown("Teleport to Player",PLIST,4,function(value)
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
-end)
-
-
-LP:addDropdown("Teleport to Player",PLIST,4,function(value)
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
-end)
-
-
-LP:addDropdown("Teleport to Player",PLIST,4,function(value)
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
-end)
-
-
-LP:addDropdown("Teleport to Player",PLIST,4,function(value)
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
-end)
 
 local Credits = UI:addPage("Local",3,false,6)
 
