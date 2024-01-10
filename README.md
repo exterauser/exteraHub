@@ -2,7 +2,7 @@
 Simple, Solid Hub for Roblox!
 
 
-# how to run extera hub?
+# how to run exteraHub?
 There is way, how to do that:
   - Install to your device [Arceus X](https://spdmteam.com)
   - Complete key system through the **LOOTLABS** (if you complete key system with linkvertise, you won't complete my key system)
